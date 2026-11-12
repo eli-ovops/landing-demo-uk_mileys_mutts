@@ -1,0 +1,1 @@
+(()=>{if(matchMedia('(prefers-reduced-motion:reduce)').matches||!window.IntersectionObserver)return;document.documentElement.classList.add('motion-enabled');document.querySelectorAll('.motion-ready').forEach(e=>new IntersectionObserver(([x],o)=>{if(x.isIntersecting){e.classList.add('motion-in');o.disconnect()}},{threshold:.12}).observe(e))})()
